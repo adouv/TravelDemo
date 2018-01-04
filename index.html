@@ -43,6 +43,8 @@
             $("#msg").empty().html(JSON.stringify(browser.versions));
             var timeout, t = 1000,
                 hasApp = true;
+            var t1 = Date.now();
+            var ifr = document.createElement("iframe");
             setTimeout(function() {
                 if (!hasApp) {
                     //没有安装微信
@@ -61,8 +63,7 @@
             } else {
                 location.href = "weixin://qr/gh_34bd692a9835";
             }
-            var t1 = Date.now();
-            var ifr = document.createElement("iframe");
+
             // ifr.setAttribute('src', url);
             // ifr.setAttribute('style', 'display:none');
             // document.body.appendChild(ifr);
