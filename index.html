@@ -55,7 +55,8 @@
                 } else {
                     //安装微信
                 }
-                document.body.removeChild(ifr);
+                $("iframe").remove();
+                //document.body.removeChild(ifr);
             }, 2000);
 
             if (browser.versions.ios) {
